@@ -1,0 +1,28 @@
+{
+  "name": "api-ecommerce",
+  "version": "1.0.0",
+  "description": "Creando una API con NodeJS para un proyecto personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscar-hdz/api-ecommerce.git"
+  },
+  "keywords": [
+    "API",
+    "NodeJS",
+    "JavaScript",
+    "Front End"
+  ],
+  "author": "Oscar Hernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscar-hdz/api-ecommerce/issues"
+  },
+  "homepage": "https://github.com/oscar-hdz/api-ecommerce#readme",
+  "dependencies": {
+    "express": "4.19.2"
+  }
+}
