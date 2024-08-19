@@ -1,0 +1,12 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Teclado RGB",
+      "precio": 1000,
+      "url__img": "https://global.machenike.com/cdn/shop/files/K500-B61-_-2_1445x.jpg?v=1683700580",
+      "descripcion": "Teclado RGB Machenike K500",
+      "categoria": "Electronic"
+    }
+  ]
+}
