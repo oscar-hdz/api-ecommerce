@@ -36,7 +36,7 @@ app.post("/productos", (req, res) => {
     url__img,
     descripcion,
     categoria,
-    estado,
+    offers,
     nuevoPrecio,
   } = req.body;
   const nuevoProducto = {
@@ -46,7 +46,7 @@ app.post("/productos", (req, res) => {
     url__img,
     descripcion,
     categoria,
-    estado,
+    offers,
     nuevoPrecio,
   };
   productos.push(nuevoProducto);
@@ -68,6 +68,7 @@ app.put("/productos/:id", (req, res) => {
     producto.url__img = url__img;
     producto.descripcion = descripcion;
     producto.categoria = categoria;
+    producto.nuevoPrecio = nuevoPrecio;
     res.status(200).json(productos);
   }
 });
