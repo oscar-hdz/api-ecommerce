@@ -30,7 +30,15 @@ app.get("/productos/:id", (req, res) => {
 
 app.post("/productos", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
-  const { nombre, precio, url__img, descripcion, categoria } = req.body;
+  const {
+    nombre,
+    precio,
+    url__img,
+    descripcion,
+    categoria,
+    estado,
+    nuevoPrecio,
+  } = req.body;
   const nuevoProducto = {
     id: crypto.randomUUID(),
     nombre,
@@ -38,6 +46,8 @@ app.post("/productos", (req, res) => {
     url__img,
     descripcion,
     categoria,
+    estado,
+    nuevoPrecio,
   };
   productos.push(nuevoProducto);
   res.json(productos);
@@ -47,7 +57,8 @@ app.put("/productos/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const { id } = req.params;
   console.log("id", id);
-  const { nombre, precio, url__img, descripcion, categoria } = req.body;
+  const { nombre, precio, url__img, descripcion, categoria, nuevoPrecio } =
+    req.body;
   const producto = productos.find((p) => p.id === id);
   if (!producto) {
     res.status(404).send("Producto no encontrado");
