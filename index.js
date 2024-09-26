@@ -57,8 +57,15 @@ app.put("/productos/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const { id } = req.params;
   console.log("id", id);
-  const { nombre, precio, url__img, descripcion, categoria, nuevoPrecio } =
-    req.body;
+  const {
+    nombre,
+    precio,
+    url__img,
+    descripcion,
+    categoria,
+    offers,
+    nuevoPrecio,
+  } = req.body;
   const producto = productos.find((p) => p.id === id);
   if (!producto) {
     res.status(404).send("Producto no encontrado");
@@ -68,6 +75,7 @@ app.put("/productos/:id", (req, res) => {
     producto.url__img = url__img;
     producto.descripcion = descripcion;
     producto.categoria = categoria;
+    producto.offers = offers;
     producto.nuevoPrecio = nuevoPrecio;
     res.status(200).json(productos);
   }
