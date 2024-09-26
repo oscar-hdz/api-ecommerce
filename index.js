@@ -28,6 +28,16 @@ app.get("/productos/:id", (req, res) => {
   }
 });
 
+app.get("/productos/ofertas/:offers", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  const { offers } = req.params;
+  console.log(offers);
+  if (offers === "true") {
+    const index = productos.filter((p) => p.offers === true);
+    res.json(index);
+  }
+});
+
 app.post("/productos", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   const {
@@ -114,7 +124,7 @@ app.options("*", (req, res) => {
 });
 
 //iniciamos el servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);

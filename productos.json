@@ -6,7 +6,79 @@
       "precio": 1000,
       "url__img": "https://global.machenike.com/cdn/shop/files/K500-B61-_-2_1445x.jpg?v=1683700580",
       "descripcion": "Teclado RGB Machenike K500",
-      "categoria": "Electronic"
+      "categoria": "Electronic",
+      "offers": false,
+      "nuevoPrecio": 0
+    },
+    {
+      "id": "2",
+      "nombre": "Funko Delux Edition",
+      "precio": 750,
+      "url__img": "https://i5.walmartimages.com/asr/09e20654-dd54-45f5-916b-b96dcbaebb38.e01b99296e3e41cee5f12858a8258a97.png",
+      "descripcion": "Funko Delux Edition Jujutsu Kaisen",
+      "categoria": "Accesorios",
+      "offers": true,
+      "nuevoPrecio": 500
+    },
+    {
+      "id": "3",
+      "nombre": "Lapto Asus",
+      "precio": 2500,
+      "url__img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449520_rd.jpg",
+      "descripcion": "Laptop Asus Color Gris 15'' con procesador Intel Core i5",
+      "categoria": "Computadores",
+      "offers": false,
+      "nuevoPrecio": 0
+    },
+    {
+      "id": "4",
+      "nombre": "Iphone 16 128gb",
+      "precio": 3000,
+      "url__img": "https://cdn1.smartprix.com/rx-i5n1dTTOB-w1200-h1200/5n1dTTOB.jpg",
+      "descripcion": "Iphone 16 128gb 6.1'' color gris oscuro con 5g",
+      "categoria": "Celulares",
+      "offers": true,
+      "nuevoPrecio": 2200
+    },
+    {
+      "id": "5",
+      "nombre": "Play Station 5",
+      "precio": 2500,
+      "url__img": "https://www.journaldugeek.com/app/uploads/2022/10/ps5-sony.jpg",
+      "descripcion": "Play Station 5 con 500 Gb de almacenamiento ",
+      "categoria": "Consolas",
+      "offers": false,
+      "nuevoPrecio": 0
+    },
+    {
+      "id": "6",
+      "nombre": "Mouse Logitech",
+      "precio": 700,
+      "url__img": "https://www.bhphotovideo.com/images/images2500x2500/logitech_910_005081_g203_prodigy_gaming_mouse_1418028.jpg",
+      "descripcion": "Mouse Logitech 910-005081 G203 Prodigy Gaming Mouse",
+      "categoria": "Accesorios",
+      "offers": true,
+      "nuevoPrecio": 500
+    },
+    {
+      "id": "7",
+      "nombre": "Monitor Gamer Asus",
+      "precio": 1500,
+      "url__img": "https://media.spdigital.cl/thumbnails/products/oxv142w1_e42b2dbf_thumbnail_4096.jpg",
+      "descripcion": "Monitor Gamer Asus 24'' Full Hd 144Hz",
+      "categoria": "Otros",
+      "offers": false,
+      "nuevoPrecio": 0
+    },
+    {
+      "id": "8",
+      "nombre": "Silla ergonómica",
+      "precio": 750,
+      "url__img": "https://www.cadeiraspro.pt/images/product/1/large/pl_1_1_5929.jpg",
+      "descripcion": "Silla ergonómica para escritorio color negro",
+      "categoria": "otros",
+      "offers": true,
+      "nuevoPrecio": 500
     }
   ]
 }
